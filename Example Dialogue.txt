@@ -1,0 +1,103 @@
+﻿all:"CLEAR"
+initial_settings:{"x":"*","usedtodepth":0.6, "usedtogirth":0.6, "monsterMult":1.5, "adjustSpeed":1.05, "lasthilt":0, "olddeepest":0}
+
+start:"[SETVAR_starttime_*dt_time*][CLEAN_ALL][LOADGLOBALS_da][ANIMTOOLS_ATV_doggy_angled]ready..."{"style":"Thought"}
+
+vigorous:"[process1]"{"style:"Thought"}
+inbody:"[process1]"{"style:"Thought"}
+bodycontact:"[process1]"{"style:"Thought"}
+bodycontactresistive:"[process1]"{"style:"Thought"}
+bodyentered:"[process1]"{"style:"Thought"}
+bodycontactspaceheldpush:"[process1]"{"style:"Thought"}
+cuminher:"[process1]"{"style:"Thought"}
+bodycontacthilt:"[process1]"{"style:"Thought"}
+bodycontactspaceheldpushinhilt:"[process1]"{"style:"Thought"}
+
+-use \ instead of / to floor the result of a division https://bitbucket.org/Pim_gd/sdtdialogueactions/src/master/Documentation/For%20Dialogue%20Writers/Operators.txt
+process1:"[process2_pos* dt_recentdeepest3 \ ( dt_penislength x 0.3 ) *_deepest* dt_recentdeepest3 > ( olddeepest x 1.1 ) *_depth* ( dt_recentdeepest3 > usedtodepth ) + ( dt_recentdeepest3 > ( usedtodepth x monsterMult ) ) *_girth* ( dt_penisgirth > usedtogirth ) + ( dt_penisgirth > ( usedtogirth x monsterMult ) ) *][SETVAR_prevolddeepest_*olddeepest*][SETVAR_olddeepest_* ( dt_recentdeepest3 x ( ( dt_recentdeepesttime3 > starttime ) && ( dt_recentdeepest3 > olddeepest ) ) ) + ( olddeepest x ( ( dt_recentdeepesttime3 <= starttime ) || ( dt_recentdeepest3 <= olddeepest ) ) ) *]"{"style:"Thought"}
+process2_pos-2_deepest0_depth0_girth0:"please give it to me!"
+process2_pos-1_deepest0_depth0_girth0:"please give it to me!"
+process2_pos-2_deepest0_depth0_girth1:"please give it to me!"
+process2_pos-1_deepest0_depth0_girth1:"please give it to me!"
+process2_pos-2_deepest0_depth0_girth2:"please give it to me!"
+process2_pos-1_deepest0_depth0_girth2:"please give it to me!"
+
+-process2_pos0_deepest0_depth0_girth0:"yawn"
+process2_pos0_deepest0_depth1_girth0:"oh that's a long dick"
+process2_pos0_deepest0_depth2_girth0:"fuck that's so deep! I still can't believe that's just the tip![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos0_deepest0_depth0_girth1:"oh that's thick"
+process2_pos0_deepest0_depth0_girth2:"fuck that's so thick![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos0_deepest0_depth1_girth1:"that's a nice tip"
+process2_pos0_deepest0_depth2_girth1:"your big dick is so deep already![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos0_deepest0_depth1_girth2:"just the tip of your monster cock is stretching me out![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos0_deepest0_depth2_girth2:"THE TIP OF YOUR MONSTER COCK IS DESTROYING MY PUSSY![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+-process2_pos0_deepest1_depth0_girth0:"yawn"
+process2_pos0_deepest1_depth1_girth0:"oh that's a long dick"
+process2_pos0_deepest1_depth2_girth0:"fuck that's so deep! I can't believe that's just the tip![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos0_deepest1_depth0_girth1:"oh that's thick"
+process2_pos0_deepest1_depth0_girth2:"fuck that's so thick![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos0_deepest1_depth1_girth1:"that's a nice tip"
+process2_pos0_deepest1_depth2_girth1:"your big dick is so deep already![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos0_deepest1_depth1_girth2:"just the tip of your monster cock is stretching me out![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos0_deepest1_depth2_girth2:"THE TIP OF YOUR MONSTER COCK IS DESTROYING MY PUSSY![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+process2_pos1_deepest0_depth0_girth0:"yawn"
+process2_pos1_deepest0_depth1_girth0:"oh that's deep"
+process2_pos1_deepest0_depth2_girth0:"fuck that's so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos1_deepest0_depth0_girth1:"oh that's thick, give me more!"
+process2_pos1_deepest0_depth0_girth2:"fuck that's so thick! deeper![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos1_deepest0_depth1_girth1:"that's a nice cock"
+process2_pos1_deepest0_depth2_girth1:"your big dick is so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos1_deepest0_depth1_girth2:"just half of your monster cock is stretching me out![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos1_deepest0_depth2_girth2:"YOUR MONSTER COCK IS DESTROYING MY PUSSY![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+process2_pos1_deepest1_depth0_girth0:"yawn"
+process2_pos1_deepest1_depth1_girth0:"oh that's deep"
+process2_pos1_deepest1_depth2_girth0:"fuck that's so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos1_deepest1_depth0_girth1:"oh that's thick, give me more!"
+process2_pos1_deepest1_depth0_girth2:"fuck that's so thick! deeper![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos1_deepest1_depth1_girth1:"that's a nice cock"
+process2_pos1_deepest1_depth2_girth1:"your big dick is so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos1_deepest1_depth1_girth2:"just half of your monster cock is stretching me out![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos1_deepest1_depth2_girth2:"YOUR MONSTER COCK IS DESTROYING MY PUSSY![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+process2_pos2_deepest0_depth0_girth0:"yawn"
+process2_pos2_deepest0_depth1_girth0:"oh that's deep, let me feel the rest of it"
+process2_pos2_deepest0_depth2_girth0:"fuck that's so deep! you're almost all the way in![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos2_deepest0_depth0_girth1:"oh that's thick, deeper!"
+process2_pos2_deepest0_depth0_girth2:"fuck that's so thick! go deeper![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos2_deepest0_depth1_girth1:"that's a nice cock, it's almost all the way in"
+process2_pos2_deepest0_depth2_girth1:"your big dick is so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos2_deepest0_depth1_girth2:"your big dick is stretching me out![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos2_deepest0_depth2_girth2:"YOUR MONSTER COCK IS DESTROYING MY PUSSY![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+process2_pos2_deepest1_depth0_girth0:"yawn"
+process2_pos2_deepest1_depth1_girth0:"oh that's deep, let me feel the rest of it"
+process2_pos2_deepest1_depth2_girth0:"fuck that's so deep! you're almost all the way in![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos2_deepest1_depth0_girth1:"oh that's thick, deeper!"
+process2_pos2_deepest1_depth0_girth2:"fuck that's so thick! go deeper![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos2_deepest1_depth1_girth1:"that's a nice cock, it's almost all the way in"
+process2_pos2_deepest1_depth2_girth1:"your big dick is so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos2_deepest1_depth1_girth2:"your big dick is stretching me out![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos2_deepest1_depth2_girth2:"YOUR MONSTER COCK IS DESTROYING MY PUSSY![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+process2_pos3_deepest0_depth0_girth0:"yawn, oh that's the whole thing again?"
+process2_pos3_deepest0_depth1_girth0:"oh that's deep"
+process2_pos3_deepest0_depth2_girth0:"fuck that's so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos3_deepest0_depth0_girth1:"oh that's thick, I just wish it was longer"
+process2_pos3_deepest0_depth0_girth2:"fuck that's so thick! too bad it's so short[SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos3_deepest0_depth1_girth1:"keep pushing that nice cock all the way in"
+process2_pos3_deepest0_depth2_girth1:"your big dick is all the way in again![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos3_deepest0_depth1_girth2:"your big dick is all the way in again![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos3_deepest0_depth2_girth2:"I CAN'T BELIEVE I FIT YOUR ENTIRE MONSTER COCK AGAIN![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+
+process2_pos3_deepest1_depth0_girth0:"yawn, oh that's the whole thing?"
+process2_pos3_deepest1_depth1_girth0:"oh that's deep"
+process2_pos3_deepest1_depth2_girth0:"fuck that's so deep![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos3_deepest1_depth0_girth1:"oh that's thick, I just wish it was longer"
+process2_pos3_deepest1_depth0_girth2:"fuck that's so thick! too bad it's so short[SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos3_deepest1_depth1_girth1:"you finally pushed that nice cock all the way in!"
+process2_pos3_deepest1_depth2_girth1:"your big dick is finally all the way in![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *]"
+process2_pos3_deepest1_depth1_girth2:"your big dick is finally all the way in![SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
+process2_pos3_deepest1_depth2_girth2:"I CAN'T BELIEVE I FIT YOUR ENTIRE MONSTER COCK![SETVAR_usedtodepth_* ( usedtodepth x adjustSpeed ) *][SETVAR_usedtogirth_* ( usedtogirth x adjustSpeed ) *]"
