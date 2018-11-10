@@ -9,6 +9,7 @@ package flash
 	
 	public class RecentDeepest {
 		public var depth:Number = 0;
+		//public var scaledDepth:Number = 0;
 		public var time:Number = 0;
 	}
 
@@ -21,6 +22,7 @@ package flash
 		var her;
 		const modname : String = "depthtracker"
 		var deepestyet:Number = 0.0;
+		var recentdeepest3:RecentDeepest = new RecentDeepest();
 		var recentdeepest5:RecentDeepest = new RecentDeepest();
 		var recentdeepest60:RecentDeepest = new RecentDeepest();
 		var lasthilt:Number = 0;
@@ -87,8 +89,9 @@ package flash
 			g.dialogueControl.advancedController._dialogueDataStore["dt_penisgirth"] = g.him.penis.scaleY;
 			g.dialogueControl.advancedController._dialogueDataStore["dt_herpos"] = herpos;
 
+			recentDeepest(herpos, now_seconds, recentdeepest3, 3);
 			recentDeepest(herpos, now_seconds, recentdeepest5, 5);
-			recentDeepest(herpos, now_seconds, recentdeepest60, 60);
+			recentDeepest(herpos, now_seconds, recentdeepest60, 60);//this could be error-prone with changing dialogs, characters, and positions...
 
 			if(herpos > deepestyet) {
 				deepestyet = herpos;
